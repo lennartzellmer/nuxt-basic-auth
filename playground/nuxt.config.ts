@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     password: 'password',
     username: 'username',
     realm: 'defaultRealm',
-    excludedRoutes: ['/health'],
-    enableOnDev: false
+    whitelistedRoutes: ['/health'],
+    enabled: false
   }
 })
