@@ -32,11 +32,10 @@ Type: `boolean`
 Default: `true`
 
 If set to `false`, skip authentication.
-Is is probably mostly in comination with .env variables.
+You might want to use that in comination with .env variables.
 
 ```nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt'
-import BasicAuth from 'nuxt-basic-authentication-module'
 
 export default defineNuxtConfig({
   modules: [
@@ -57,7 +56,6 @@ Sometimes routes need to be accessible regradless of basic auth setting. One exa
 
 ```nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt'
-import BasicAuth from 'nuxt-basic-authentication-module'
 
 export default defineNuxtConfig({
   modules: [
@@ -78,7 +76,6 @@ In rare cases you might need to set the realm in order to group basic auth toget
 
 ```nuxt.config.ts
 import { defineNuxtConfig } from 'nuxt'
-import BasicAuth from 'nuxt-basic-authentication-module'
 
 export default defineNuxtConfig({
   modules: [
